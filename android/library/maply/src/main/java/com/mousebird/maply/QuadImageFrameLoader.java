@@ -243,6 +243,12 @@ public class QuadImageFrameLoader extends QuadImageLoaderBase {
         super.changeTileInfo(newTileInfo);
     }
 
+    /**
+     * Set a label to be displayed in debug output for this loader
+     */
+    public native void setLabel(@Nullable String label);
+    @Nullable public native String getLabel();
+
     @Override
     public void shutdown() {
         valid = false;
