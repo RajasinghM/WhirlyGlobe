@@ -330,8 +330,8 @@ bool TextureGLES::createInRenderer(const RenderSetupInfo *inSetupInfo)
                     return false;
                 }
             }
-            wkLog("fmt=%d sb=%d w=%d h=%d => if=%x f=%x t=%x b=%d",
-                  format, byteSource, width, height, internalFormat, glFormat, glType, bytesPerRow);
+            //wkLog("fmt=%d sb=%d w=%d h=%d => if=0x%x f=0x%x t=0x%x b=%d",
+            //      format, byteSource, width, height, internalFormat, glFormat, glType, bytesPerRow);
             const auto *data = convertedData ? convertedData->getRawData() : nullptr;
             glTexImage2D(GL_TEXTURE_2D, /*level=*/0, internalFormat,
                          (GLsizei)width, (GLsizei)height, /*border=*/0,
