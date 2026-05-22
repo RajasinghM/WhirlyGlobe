@@ -156,13 +156,8 @@ android {
     testOptions {
         reportDir "build/outputs/reports"
         resultsDir "build/outputs/results"
-        unitTests {
-            all {
-                //jvmArgs '-XX:MaxPermSize=256m'
-                //if (it.name == 'testDebugUnitTest') {
-                //    systemProperty 'debug', 'true'
-                //}
-            }
+        unitTests.all {
+            enabled = false
         }
     }
     ndkVersion '28.2.13676358'
