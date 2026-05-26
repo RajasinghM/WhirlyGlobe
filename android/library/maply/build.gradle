@@ -51,7 +51,7 @@ android {
                 jniDebuggable true
                 if (maplyBuildNative) {
                     ndk {
-                        abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+                        abiFilters 'arm64-v8a'
                         debuggable true
                     }
                     externalNativeBuild {
@@ -84,7 +84,7 @@ android {
                 jniDebuggable true
                 if (maplyBuildNative) {
                     ndk {
-                        abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+                        abiFilters 'arm64-v8a'
                         debuggable true
                     }
                     externalNativeBuild {
@@ -101,7 +101,7 @@ android {
                 jniDebuggable false
                 if (maplyBuildNative) {
                     ndk {
-                        abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+                        abiFilters 'arm64-v8a'
                         debuggable false
                     }
                     externalNativeBuild {
